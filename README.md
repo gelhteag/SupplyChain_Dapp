@@ -9,13 +9,13 @@ For this purpose, I used ganache from [trufflesuite](https://www.trufflesuite.co
 ## Architecture dapp:
 
 
-![image architecture](https://imgur.com/KxBaUgC)
+![image architecture](https://i.imgur.com/KxBaUgC.jpg)
 
 
 ### UML:
 
 
-![image UML](https://imgur.com/u5HagRw)
+![image UML](https://i.imgur.com/u5HagRw.jpg)
 
 
 ## Module used:
