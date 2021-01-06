@@ -6,6 +6,15 @@ This project aims to creat a DApp supply chain solution backed by the Ethereum p
 For this purpose, I used ganache from [trufflesuite](https://www.trufflesuite.com/ganache) easy to used and install. It gives the possibility to deploy a private ethereum network in order to compile, deploy and test smart-contract before production in a safe environement.
 
 ###### The developpement and the test were done on a  Ubuntu 20.04.1 LTS -v focal.
+
+## Frontend dapp:
+A minimal frontend is provide in order to test all the dapp functionality don't forget to inspect the browser in order to have acces to the console and the logs.
+
+
+
+![frontend](https://i.imgur.com/WR0Zw3C.png)
+
+
 ## Architecture dapp:
 
 
