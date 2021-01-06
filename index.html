@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda Factory Tracking</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Quality Soda</h1>
+        <hr>
+        <p style="text-align: center;">Prove the authenticity of Soda using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-design">
+    	<h2>Upload image</h2>
+        <div class="form-group">
+            Image path
+            <br>
+            <input type="text" id="upload" name="upload" placeholder="Enter the image path" ><br>
+            
+            <div class=button-div>
+                
+                <button class="btn-upload" id="button" type="button" data-id="11">upload image</button>
+                
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Product Overview</h2>
+        <div class="form-group">
+            SKU
+            <br>
+            <input class="input-field" type="number" id="sku" name="sku" placeholder="Enter the sku"><br>
+            UPC
+            <br>
+            <input type="number" id="upc" name="upc" placeholder="Enter the upc"><br>
+            Current Owner ID
+            <br>
+            <input type="text" id="ownerID" name="ownerID" value="0x319D549314Ba417DaD50C9C571f039Db20621a59" size="50"><br>
+            <div class=button-div>
+                <button class="btn-fetchOne" id="button" type="button" data-id="9">Fetch Data 1</button>
+                <button class="btn-fetchTwo" id="button" type="button" data-id="10">Fetch Data 2</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Factory Details</h2>
+        <div class="form-group">
+            Factory ID
+            <br>
+            <input type="text" id="originFactoryID" name="originFactoryID" value="0x319D549314Ba417DaD50C9C571f039Db20621a59"
+                size="50"><br>
+            Factory Name
+            <br>
+            <input type="text" id="originFactoryName" name="originFactoryName" placeholder="Enter the name of the factory owner" ><br>
+            Factory Information
+            <br>
+            <input type="text" id="originFactoryInformation" name="originFactoryInformation" value="Brussels Uccle"><br>
+            Factory Latitude
+            <br>
+            <input type="text" id="originFactoryLatitude" name="originFactoryLatitude" value="-38.239770"><br>
+            Factory Longitude
+            <br>
+            <input type="text" id="originFactoryLongitude" name="originFactoryLongitude" value="144.341490"><br>
+            <br>
+            <button class="btn-design" id="button" type="button" data-id="1">Design</button>
+            <button class="btn-process" id="button" type="button" data-id="2">Process</button>
+            <button class="btn-pack" id="button" type="button" data-id="3">Pack</button>
+            <button class="btn-forsale" id="button" type="button" data-id="4">ForSale</button>
+        </div>
+        <div class=form-break></div>
+        <h2>Product Details</h2>
+        <div class="form-group">
+            Product Notes
+            <br>
+            <input type="text" id="productNotes" name="productNotes" value="Best soda to spin your brain" size="60"><br>
+            Product Price
+            <br>
+            <input type="number" id="productPrice" name="productPrice" value=1>ETH<br>
+            Distributor ID
+            <br>
+            <input type="text" id="distributorID" name="distributorID" value="0xbaB9f6A833A451726E39F716cB9e6810fF54e3BA"
+                size="50">
+            <br>
+            Retailer ID
+            <br>
+            <input type="text" id="retailerID" name="retailerID" value="0x465339F3383f9614ff1fbE17Fd10aFcBc33e262b"
+                size="50"><br>
+            ConsumerID ID
+            <br>
+            <input type="text" id="consumerID" name="consumerID" value="0x687fFD4b075557B86e396e83da869b4c8637FA6b"
+                size="50"><br>
+            <br>
+            <button class="btn-buy" id="button" type="button" data-id="5">Buy</button>
+            <button class="btn-ship" id="button" type="button" data-id="6">Ship</button>
+            <button class="btn-receive" id="button" type="button" data-id="7">Receive</button>
+            <button class="btn-purchase" id="button" type="button" data-id="8">Purchase</button>
+        </div>
+        <div class=form-break></div>
+        <hr>
+    </div>
+
+    <h2>Transaction History<span id="ftc-history"></span></h2>
+    <div>
+        <ul id="ftc-events">
+            <!-- Events will appear here from app.js -->
+        </ul>
+        <br>
+        <hr>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>
