@@ -2,7 +2,7 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "<Infura PROJECT ID>";
 //
 // const fs = require('fs');
-const mnemonic = "blossom lion woman pupil winner hero fly lobster possible decrease remain matter";
+const mnemonic = "seed wallet mnemonic";
 
 module.exports = {
 
@@ -15,7 +15,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // NB: It's important to wrap the provider as a function.
     rinkeby: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/65f01b8ff37a4303828f775eb0b2338a`),
+      provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/xxxxxxxxxxxxxxxxxxxxxxxxx`),
         network_id: 4,       // rinkeby's id
         gas: 4500000,        // rinkeby has a lower block limit than mainnet
         gasPrice: 10000000000
